@@ -2,7 +2,7 @@
 class MudiExperience{
 
     constructor(){
-        this.color              = "#ffad48";
+        this.color              = "#0071ce";
         this.dataSever          = null;
         this.skuNumber          = null;
         this.fatherContainer    = null;
@@ -65,8 +65,8 @@ class MudiExperience{
                 <defs>
                     <style>
                         .cls-1{
-                            fill:${this.color};
-                            opacity:.6;
+                            fill:#ffad48;
+                            opacity:.8;
                         }
                         
                         .cls-1,.cls-2,.cls-3{
@@ -76,7 +76,7 @@ class MudiExperience{
                             fill:#f4f4f4;
                         }
                         .cls-3{
-                            fill:${this.color};
+                            fill:#473f3f;
                         }
                     </style>
                 </defs>
@@ -395,7 +395,7 @@ let verifycontent = 0;
 /** verify DomElement */
 async function verifyDomElement() {
 
-    let fatherContainer = document.body.querySelector(`.fotorama__stage__shaft`);
+    let fatherContainer = document.body.querySelector(`.gallery-wrapper`);
     let skuElement = document.querySelector('.value');
     
     // Incrementar el contador antes de la verificación de límite
