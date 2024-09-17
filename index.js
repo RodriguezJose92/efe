@@ -413,7 +413,8 @@ async function verifyDomElement() {
         return;
     }
     
-    let skuNumber = skuElement.innerText.trim();
+    // Obtener el valor de skuElement y agregar "_efe"
+    let skuNumber = skuElement.innerText.trim() + "_efe";
     
     await mudiExperience.experienceOn(skuNumber, fatherContainer);
 }; 
@@ -421,7 +422,6 @@ async function verifyDomElement() {
 setTimeout(async () => {
     await verifyDomElement();
 }, 2000);
-
 
 
 
